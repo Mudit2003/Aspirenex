@@ -12,7 +12,8 @@ def tuneParameters(rf , X_train , y_train , X_test , y_test):
     }
 
     grid_search = GridSearchCV(rf, param_grid, cv=5, n_jobs=-1, verbose=2)
-    grid_search.fit(X_train, y_train)
+    n = min(len(X_train), len(y_train))
+    grid_search.fit(X_train[:n], y_train[:n])
 
     print("Best Parameters from Grid Search:", grid_search.best_params_)
     best_rf = grid_search.best_estimator_
