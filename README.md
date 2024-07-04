@@ -1,33 +1,26 @@
+# Customer Churn Prediction and Handwritten Text Recognition Project
 
-# Handwritten Text Recognition Model Training and Prediction
+This repository contains two modules developed as part of an assignment project at AspireNex: Customer Churn Prediction (CCP) and Handwritten Text Recognition (HR).
 
-This script performs the following steps:
-1. Loads and cleans the dataset.
-2. Preprocesses the images and labels.
-3. Extracts the set of unique characters in the training data.
-4. Builds the OCR model using a pre-trained ResNet50 base.
-5. Trains the model on the training data.
-6. Makes predictions using the trained model.
-7. Decodes the predictions and tests the model on th test data.
+## Customer Churn Prediction (CCP)
 
-Functions
----------
-loadDataset : function
-    Loads the dataset from the specified source.
-cleanData : function
-    Cleans the dataset by removing NaN values and unreadable entries.
-imagePreprocessing : function
-    Preprocesses the images and labels for training, validation, and test datasets.
-tokenizing : function
-    Tokenizes the labels in the training data.
-buildModel : function
-    Builds the OCR model using a pre-trained ResNet50 base.
-trainModel : function
-    Trains the OCR model on the training data.
-predict : function
-    Makes predictions using the trained model.
-decode_predictions : function
-    Decodes the predictions made by the model.
-testPrediction : function
-    Tests the model on the test data and evaluates its performance.
+CCP module predicts customer churn using the Telco Customer Churn dataset from Kaggle ([Dataset Link](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)).
+
+### Handwritten Text Recognition
+The HR module focuses on recognizing handwritten text using a Telco Handwriting Dataset from Kaggle([Dataset Link](https://www.kaggle.com/datasets/landlord/handwriting-recognition/data)). It involves preprocessing images, building an OCR model using ResNet50, training the model, making predictions, and evaluating its performance.
+
+### Jupyter Notebooks
+Both the modules contain jupyter notebooks that contain the complete ideation , testing and playground while the final model is laid in the code.
+
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Mudit2003/Aspirenex/
+   cd Aspirenex/
+
+2. Install the dependences: 
+    ```bash
+    pip install -r requirements.txt
+3. Move to the directories and run the ipynb files. 
+4. Please do not forget to download the dataset from kaggle. 
 

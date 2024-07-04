@@ -1,0 +1,17 @@
+# Requirements for Customer Churn Prediction (CCP) and Handwritten Text Recognition (HR) modules
+
+# Core libraries
+numpy==1.21.0
+pandas==1.3.0
+scikit-learn==0.24.2
+matplotlib==3.4.2
+
+# Deep learning frameworks
+tensorflow==2.5.0
+keras==2.4.3
+
+# Image processing
+opencv-python==4.5.2.54
+
+# Additional libraries
+jupyterlab==3.1.10   # For Jupyter notebooks
