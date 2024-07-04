@@ -18,6 +18,6 @@ def featureSelection(X , y):
     selected_features = select_k_best.get_support(indices=True)
     # transform the test data accordingly , note that we did not want the test data to affect the calculation of K best features 
     # this is to ensure a generalize model else overfitting will prevail 
-    X_test_new = X_test.iloc[:selected_features]
+    X_test_new = X_test.iloc[:, selected_features]
 
     return (X_train_new , X_test_new , y_train , y_test)
